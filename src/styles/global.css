@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+@theme {
+  /* unbind default fonts and colors */
+  --color-*: initial;
+  --font-*: initial;
+
+  /* use colors defined in figma mockup */
+  --color-primary: #D7BCAD;
+  --color-secondary: #452F47;
+
+  /* use fonts defined in figma mockup */
+  --font-header: "Jersey 25";
+  --font-content: "Jersey 20";
+  --font-fine: "Jersey 15";
+}
