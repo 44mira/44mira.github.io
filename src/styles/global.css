@@ -3,7 +3,7 @@
 @theme {
   /* unbind default fonts and colors */
   --color-*: initial;
-  --font-*: initial;
+  /* --font-*: initial; */
 
   /* use colors defined in figma mockup */
   --color-primary: #D7BCAD;
@@ -13,6 +13,7 @@
   --font-header: "Jersey 25";
   --font-content: "Jersey 20";
   --font-fine: "Jersey 15";
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 @utility text-stroke-* {
