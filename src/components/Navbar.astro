@@ -1,12 +1,25 @@
 ---
+import Button from "./Button.astro"
 
+const links = [
+  { label: "github", link: "https://github.com/44mira" },
+  { label: "dev-to", link: "https://dev.to/if-els" },
+  { label: "linkedin", link: "https://www.linkedin.com/in/tyrael-lada-8b7b712a6/" },
+]
+
+// TODO: resume download
+const resume_info = {
+  label: "resume",
+  link: "https://drive.google.com/drive/folders/1vh789rSqNyOxeuc20ed8jhHoV_XI6k8H?usp=sharing",
+}
 ---
 
-<div class="border-b-2 border-primary flex justify-between">
-  <div>
-    content1
+<div class="border-b-2 border-primary flex md:flex-row flex-col items-center justify-between px-8 py-5 min-w-full">
+  <div class="font-header text-4xl text-primary hover:text-secondary hover:text-stroke-primary">
+    <a href="/">if-els</a>
   </div>
-  <div>
-    content2
+  <div class="flex gap-5">
+    {links.map(e => <Button info={e} />)}
+    <Button info={resume_info} invert={true}/>
   </div>
 </div>

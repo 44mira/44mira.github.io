@@ -14,3 +14,21 @@
   --font-content: "Jersey 20";
   --font-fine: "Jersey 15";
 }
+
+@utility text-stroke-* {
+  text-shadow:
+    -1px -1px 0 --value(--color-*),
+    -1px 1px 0 --value(--color-*),
+    -1px 0px 0 --value(--color-*),
+    1px 1px 0 --value(--color-*),
+    1px -1px 0 --value(--color-*),
+    0px -1px 0 --value(--color-*),
+    0px 1px 0 --value(--color-*),
+    1px 0px 0 --value(--color-*);
+}
+
+@layer components {
+  * {
+    font-family: var(--font-content);
+  }
+}

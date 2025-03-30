@@ -1,0 +1,13 @@
+---
+const { info, invert } = Astro.props;
+
+const { label, link } = info;
+
+---
+
+<a href={link} target="_blank" class:list={[{
+  "bg-primary text-secondary": !invert,
+  "bg-secondary text-primary": invert,
+}, "min-w-fit p-2 text-4xl border-2 border-primary hover:outline-3 hover:border-secondary outline-primary"]}>
+  {"./" + label}
+</a>
