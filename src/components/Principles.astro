@@ -1,0 +1,42 @@
+---
+import Card from "./Card.astro";
+
+const principles = [
+  {
+    header: "specialization is for insects",
+    content:
+      "Computer Science, or technology as a whole, is too vast and expansive to simply specialize at a single field. Moreover, these areas harmoniously compliment each other, and therefore learning one is also indirectly practicing everything else.",
+  },
+  {
+    header: "code is poetry",
+    content:
+      "Writing code is never entirely about outputs but also the elegance of getting there. Emphasis on terse, yet understandable, code is just as important as conceptualizing it in the first place. Code is expressive and generative art, just as much as drawing or cooking.",
+  },
+  {
+    header: "less is more",
+    content:
+    "Simplicity is an instrument of the skilled. Being able to express ideas in a concise manner, with as little noise and ceremony as possible, is the pinnacle of creation. If you are able to express your art in two colors or less, do it.",
+  },
+  {
+    header: "complexity from composition",
+    content:
+      "The best solutions often come from the combination of small solutions that solve their own problems. Complexity should not be from implementation of a single function but from the elegant way of composing together simple concepts.",
+  },
+];
+---
+
+<div class="flex flex-col gap-3 p-28">
+  <h2 class="text-secondary text-stroke-primary text-5xl text-header">
+    // how do i do things?
+  </h2>
+  <p class="text-3xl text-primary text-content">
+    i believe the easiest way to get to know someone is to know the principles
+    they believe in, here are mine:
+  </p>
+
+  <div
+    class="flex gap-2 border-2 border-primary max-w-full p-2 mt-2 overflow-x-scroll"
+  >
+    {principles.map(({ header, content }) => <Card {header} {content} />)}
+  </div>
+</div>
