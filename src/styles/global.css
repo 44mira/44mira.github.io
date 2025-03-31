@@ -18,14 +18,14 @@
 
 @utility text-stroke-* {
   text-shadow:
-    -1px -1px 0 --value(--color-*),
-    -1px 1px 0 --value(--color-*),
-    -1px 0px 0 --value(--color-*),
-    1px 1px 0 --value(--color-*),
-    1px -1px 0 --value(--color-*),
-    0px -1px 0 --value(--color-*),
-    0px 1px 0 --value(--color-*),
-    1px 0px 0 --value(--color-*);
+    -2px -2px 0 --value(--color-*),
+    -2px 2px 0 --value(--color-*),
+    -2px 0px 0 --value(--color-*),
+    2px 2px 0 --value(--color-*),
+    2px -2px 0 --value(--color-*),
+    0px -2px 0 --value(--color-*),
+    0px 2px 0 --value(--color-*),
+    2px 0px 0 --value(--color-*);
 }
 
 @layer components {
