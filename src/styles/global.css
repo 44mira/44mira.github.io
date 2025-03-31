@@ -3,7 +3,7 @@
 @theme {
   /* unbind default fonts and colors */
   --color-*: initial;
-  /* --font-*: initial; */
+  --font-*: initial;
 
   /* use colors defined in figma mockup */
   --color-primary: #D7BCAD;
