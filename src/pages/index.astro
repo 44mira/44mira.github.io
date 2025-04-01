@@ -1,12 +1,14 @@
 ---
 import "../styles/global.css";
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 
 import Hero from "../components/Hero.astro";
 import Principles from "../components/Principles.astro";
 ---
 
 <Layout>
-  <Hero />
-  <Principles />
+  <div class="flex flex-col snap-y snap-mandatory min-h-screen h-screen overflow-y-scroll">
+    <Hero />
+    <Principles />
+  </div>
 </Layout>
