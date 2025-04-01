@@ -15,7 +15,7 @@ const principles = [
   {
     header: "less is more",
     content:
-    "Simplicity is an instrument of the skilled. Being able to express ideas in a concise manner, with as little noise and ceremony as possible, is the pinnacle of creation. If you are able to express your art in two colors or less, do it.",
+      "Simplicity is an instrument of the skilled. Being able to express ideas in a concise manner, with as little noise and ceremony as possible, is the pinnacle of creation. If you are able to express your art in two colors or less, do it.",
   },
   {
     header: "complexity from composition",
@@ -25,7 +25,7 @@ const principles = [
 ];
 ---
 
-<div class="flex flex-col gap-3 p-28">
+<div id="principles" class="flex flex-col gap-3 p-28 mt-56">
   <h2 class="text-secondary text-stroke-primary text-5xl text-header">
     // how do i do things?
   </h2>
@@ -33,10 +33,19 @@ const principles = [
     i believe the easiest way to get to know someone is to know the principles
     they believe in, here are mine:
   </p>
-
   <div
     class="flex gap-2 border-2 border-primary max-w-full p-2 mt-2 overflow-x-scroll"
   >
     {principles.map(({ header, content }) => <Card {header} {content} />)}
   </div>
 </div>
+
+<script>
+  import { animate, inView } from "motion";
+
+  inView("#principles", (e) => {
+    animate(e, { opacity: 1, x: 0 }, { duration: 0.9 });
+
+    return () => animate(e, { opacity: 0, x: -100 });
+  });
+</script>
