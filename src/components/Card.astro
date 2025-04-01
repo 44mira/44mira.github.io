@@ -2,7 +2,7 @@
 const { header, content } = Astro.props;
 ---
 
-<div id="card" class="bg-primary p-5 flex flex-col gap-2 min-h-full">
-  <h3 class="text-primary text-stroke-secondary text-3xl">- {header}</h3>
-  <p class="text-secondary text-xl text-fine">{content}</p>
+<div id="card" class="bg-primary p-5 flex flex-col gap-2 min-h-full snap-start">
+  <h3 class="text-primary text-stroke-secondary md:text-3xl text-4xl">- {header}</h3>
+  <p class="text-secondary md:text-xl text-2xl text-fine min-h-56 h-fit">{content}</p>
 </div>

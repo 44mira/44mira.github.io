@@ -25,16 +25,16 @@ const principles = [
 ];
 ---
 
-<div id="principles" class="flex flex-col gap-3 p-28 justify-center min-h-screen snap-center">
+<div id="principles" class="flex flex-col gap-3 md:p-28 p-5 justify-center min-h-screen snap-center">
   <h2 class="text-secondary text-stroke-primary text-5xl text-header">
     // how do i do things?
   </h2>
-  <p class="text-3xl text-primary text-content">
+  <p class="sm:text-3xl text-xl text-primary text-content">
     i believe the easiest way to get to know someone is to know the principles
     they believe in, here are mine:
   </p>
   <div
-    class="flex gap-2 border-2 border-primary max-w-full p-2 mt-2 overflow-x-scroll"
+    class="flex md:flex-row flex-col gap-2 border-2 border-primary max-w-full p-2 mt-2 overflow-scroll md:snap-x snap-y snap-mandatory"
   >
     {principles.map(({ header, content }) => <Card {header} {content} />)}
   </div>
@@ -46,9 +46,9 @@ const principles = [
   inView(
     "#principles",
     () => {
-      animate("#card", { y: [-300, 0] }, { delay: stagger(0.50) });
+      animate("#card", { y: [300, 0] }, { delay: stagger(0.50) });
 
-      return () => animate("#card", { y: -300 });
+      return () => animate("#card", { y: 300 });
     },
     { margin: "-20px 0px -20px 0px" },
   );
