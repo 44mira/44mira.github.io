@@ -14,11 +14,11 @@ const resume_info = {
 }
 ---
 
-<div class="fixed bg-secondary border-b-2 border-primary flex md:flex-row flex-col items-center justify-between px-8 py-5 min-w-full">
-  <div class="font-header text-4xl text-primary hover:text-secondary hover:text-stroke-primary">
+<div class="md:fixed md:top-auto sticky top-0 bg-secondary border-b-2 border-primary flex md:flex-row flex-col items-center justify-between px-8 py-5 gap-4 min-w-full overflow-clip">
+  <div class="font-header text-4xl text-primary hover:text-secondary hover:text-stroke-primary md:block hidden">
     <a href="/" data-astro-reload>if-els</a>
   </div>
-  <div class="flex gap-5">
+  <div class="flex gap-5 overflow-x-scroll min-w-fit">
     {links.map(e => <Button info={e} />)}
     <Button info={resume_info} invert={true}/>
   </div>

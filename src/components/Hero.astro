@@ -9,12 +9,12 @@ const roles = [
 
 ---
 
-<div class="flex md:flex-row flex-col gap-16 justify-center items-center overflow-clip min-h-screen">
-  <div class="flex flex-col gap-2">
-    <h1 class="lg:text-8xl md:text-7xl text-header text-secondary text-stroke-primary">
+<div class="flex md:flex-row flex-col gap-16 justify-center items-center overflow-clip min-h-screen snap-center">
+  <div class="flex flex-col gap-2 md:items-start items-center">
+    <h1 class="lg:text-8xl text-7xl text-header text-secondary text-stroke-primary text-center">
       legolas tyrael lada
     </h1>
-    <ul class="lg:text-5xl md:text-4xl text-primary">
+    <ul class="lg:text-5xl text-4xl text-primary">
       {roles.map(e => <li>* {e}</li>)}
     </ul>
   </div>
