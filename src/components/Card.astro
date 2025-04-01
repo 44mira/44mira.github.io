@@ -1,9 +1,8 @@
 ---
 const { header, content } = Astro.props;
-
 ---
 
-<div class="bg-primary p-5 flex flex-col gap-2 min-h-full">
+<div id="card" class="bg-primary p-5 flex flex-col gap-2 min-h-full">
   <h3 class="text-primary text-stroke-secondary text-3xl">- {header}</h3>
   <p class="text-secondary text-xl text-fine">{content}</p>
 </div>
